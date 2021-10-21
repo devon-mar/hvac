@@ -152,7 +152,7 @@ Create/Update Secret
 Patch Existing Secret
 ---------------------
 
-Method (similar to the Vault CLI command `vault kv patch`) to update an existing path. Either to add a new key/value to the secret and/or update the value for an existing key. Raises an :py:class:`hvac.exceptions.InvalidRequest` if the path hasn't been written to previously.
+Method (similar to the Vault CLI command `vault kv patch`) to update an existing path. Either to add a new key/value to the secret and/or update the value for an existing key. Raises an :py:class:`hvac.exceptions.InvalidPath` if the path hasn't been written to previously.
 
 :py:meth:`hvac.api.secrets_engines.KvV2.patch`
 
